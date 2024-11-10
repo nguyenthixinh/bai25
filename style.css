@@ -1,0 +1,47 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    background-image: url('nen.jpg'); /* Đường dẫn tới ảnh nền toàn màn hình */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9); /* Nền form mờ */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-control:focus {
+    border-color: #00A4CCFF; /* Canva Blue */
+    box-shadow: 0 0 5px rgba(0, 164, 204, 0.5);
+}
+
+.custom-btn {
+    background-color: #00A4CCFF; /* Canva Blue */
+    border: none;
+    color: #FFFFFF;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: #07689F; /* Darker blue for hover */
+    transform: translateY(-3px); /* Nhẹ nhàng nâng lên */
+}
+
+.custom-btn:active {
+    background-color: #034F84; /* Màu tối hơn khi click */
+    transform: translateY(1px); /* Hạ xuống khi click */
+}
